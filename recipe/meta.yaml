@@ -1,6 +1,6 @@
 {% set name = "reprozip" %}
-{% set version = "1.0.11" %}
-{% set sha256 = "90a6f17a2dd7a63a0eb38ba3a2fb57d5932f3336c95509bdd1cdfb39f1e140b5" %}
+{% set version = "1.0.12" %}
+{% set sha256 = "7525016157c662361e7b1ac0741df1ddffb7be2fae4855ffb087c276c63a7f8c" %}
 
 package:
   name: {{ name|lower }}

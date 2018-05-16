@@ -21,14 +21,16 @@ environment to reproduce the results (unpacking step).
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/reprozip-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/reprozip-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/data-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/data-feedstock)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/reprozip/badges/version.svg)](https://anaconda.org/conda-forge/reprozip)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/reprozip/badges/downloads.svg)](https://anaconda.org/conda-forge/reprozip)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-reprozip-green.svg)](https://anaconda.org/conda-forge/reprozip) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/reprozip.svg)](https://anaconda.org/conda-forge/reprozip) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/reprozip.svg)](https://anaconda.org/conda-forge/reprozip) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/reprozip.svg)](https://anaconda.org/conda-forge/reprozip) |
 
 Installing reprozip
 ===================

@@ -13,15 +13,16 @@ source:
 
 build:
   skip: true  # [not linux32 and not linux64]
-  number: 0
+  number: 1
   script: "INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include python setup.py install --single-version-externally-managed --record record.txt"
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
-    - toolchain
-    - sqlite 3.13.*
+    - sqlite
   run:
     - python
     - setuptools  # for pkg_resources

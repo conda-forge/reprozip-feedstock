@@ -21,7 +21,7 @@ environment to reproduce the results (unpacking step).
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/data-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/data-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/reprozip-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/reprozip-feedstock)
 ![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 ![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 

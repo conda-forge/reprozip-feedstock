@@ -1,6 +1,6 @@
 {% set name = "reprozip" %}
-{% set version = "1.0.13" %}
-{% set sha256 = "ef000683d42724bb2c300726071d1c9eb398316142e5fe70c108c82b6e77ccb1" %}
+{% set version = "1.0.14" %}
+{% set sha256 = "e0fb2b684951e2c5b27f8e6ca099bba4175d335076b230fe8e523c6041a0c7f6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,14 +13,15 @@ source:
 
 build:
   skip: true  # [not linux32 and not linux64]
-  number: 1
-  script: "INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include python setup.py install --single-version-externally-managed --record record.txt"
+  number: 0
+  script: "INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include $PYTHON -m pip install --no-deps --ignore-installed . --verbose"
 
 requirements:
   build:
     - {{ compiler('c') }}
   host:
     - python
+    - pip
     - setuptools
     - sqlite
   run:

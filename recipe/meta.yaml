@@ -1,6 +1,6 @@
 {% set name = "reprozip" %}
-{% set version = "1.0.14" %}
-{% set sha256 = "e0fb2b684951e2c5b27f8e6ca099bba4175d335076b230fe8e523c6041a0c7f6" %}
+{% set version = "1.0.16" %}
+{% set sha256 = "28f7a490e709205db8bc7f3ec2d9c08cd4b09b5632c9972db3508ab7acd4df2f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [not linux32 and not linux64]
-  number: 1000
+  number: 0
   script: "INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include $PYTHON -m pip install --no-deps --ignore-installed . --verbose"
 
 requirements:

@@ -1,6 +1,6 @@
 {% set name = "reprozip" %}
-{% set version = "1.1" %}
-{% set sha256 = "876801836ad8beb09aaf707cbb2a74d6b3eef72077a27c0cb04ba1f20a3fb26a" %}
+{% set version = "1.2" %}
+{% set sha256 = "a98b7f04c52c60072e3c42da21997d3ad41161ff6cb1139e18cda8d3012120f9" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   skip: true  # [(not linux32 and not linux64) or python_impl == 'pypy']
-  number: 3
-  script: "INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include $PYTHON -m pip install --no-deps --ignore-installed . --verbose"
+  number: 0
+  script: INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include $PYTHON -m pip install --no-deps --ignore-installed . --verbose
 
 requirements:
   build:
@@ -46,7 +46,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'Linux tool enabling reproducible experiments (packer)'
+  summary: Linux tool enabling reproducible experiments (packer)
   description: |
     ReproZip is a tool aimed at simplifying the process of creating reproducible
     experiments from command-line executions, a frequently-used common

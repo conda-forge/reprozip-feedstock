@@ -1,11 +1,11 @@
-About reprozip
-==============
+About reprozip-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reprozip-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/VIDA-NYU/reprozip
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/reprozip-feedstock/blob/main/LICENSE.txt)
 
 Summary: Linux tool enabling reproducible experiments (packer)
 
@@ -51,6 +51,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1845&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reprozip-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.11.____cpythonpython_implcpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_64_python3.12.____cpythonpython_implcpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1845&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/reprozip-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpythonpython_implcpython" alt="variant">
                 </a>
               </td>
             </tr><tr>

@@ -13,12 +13,13 @@ source:
 
 build:
   skip: true  # [(not linux32 and not linux64) or python_impl == 'pypy']
-  number: 0
+  number: 1
   script: INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include $PYTHON -m pip install --no-deps --ignore-installed . --verbose
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip

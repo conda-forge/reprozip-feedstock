@@ -8,12 +8,12 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   skip: true  # [(not linux32 and not linux64) or python_impl == 'pypy']
-  number: 1
+  number: 2
   script: INCLUDE_PATH=${PREFIX}/include C_INCLUDE_PATH=${PREFIX}/include $PYTHON -m pip install --no-deps --ignore-installed . --verbose
 
 requirements:
